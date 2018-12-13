@@ -1,0 +1,70 @@
+body { 
+    padding-top: 70px;
+    background-image: url(images/Elliot.png);
+}
+
+#typed {
+    color: black;
+    font-family: 'Anonymous Pro';
+    font-size: 5em;
+}
+
+.typed-cursor {
+    color: black;
+    font-size: 5em;
+}
+
+@media (min-width: 300px) {
+    #typed {
+        color: black;
+        font-size: 5em;
+        /*font-size: 1.5em;*/
+    }
+    .typed-cursor {
+        font-size: 5em;
+        /*font-size: 1.5em;*/
+    }
+}
+
+@media (min-width: 500px) {
+    #typed {
+        color: black;
+        font-size: 5em;
+        /*font-size: 2.5em;*/
+    }
+    .typed-cursor {
+        font-size: 5em;
+        /*font-size: 2.5em;*/
+    }
+}
+
+.section1 {
+    height: 100%;
+
+
+}
+
+.section2 {
+    height: 100%;
+    background-color: blue;
+}
+
+#title {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#selfie {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.jumbotron {
+    color: #2c3e50;
+    background: #ecf0f1;
+}
