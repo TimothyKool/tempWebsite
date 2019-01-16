@@ -7,8 +7,6 @@ var typed = new Typed('#typed', {
   	cursorChar: '|',
   	autoInsertCss: true,
 	smartBackspace: true,
-	loop: true,
-	loopCount: Infinity,
 });
 
 var typed2 = new Typed('#typed2', {
