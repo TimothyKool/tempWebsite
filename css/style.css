@@ -1,71 +1,76 @@
+html {
+    height: 100%;
+}
 
-body { 
-    padding-top: 70px;
-    background: url('/images/computer-image.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+body {
+    height: 100%;
+    background: url('../images/computer-image.jpg') no-repeat center center fixed; 
     background-size: cover;
-
 }
 
-#section1 {
-    height: 100%;
-    min-height: 100%;
+section {
+    height: 100vh;
+    width: 100vw;
+    overflow-wrap: normal;
+    overflow: auto;
+    align-content: center;
 }
 
-#section2 {
-    height: 100%;
+section:nth-child(3) {
+    background: #5EB8B6;
+    color: #eee;
+    font-family: 'Montserrat', sans-serif;
 }
 
-#section3 {
-    height: 100%;
-}
-
-#section4 {
-    height: 100%;
-}
-
-#typed-strings {
-    padding-top: 25px;
-}
-
-#typed {
+section:nth-child(4) {
+    background: #E2E4E3;
     color: black;
-    font-family: 'Anonymous Pro';
-    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
 }
 
-#typedStyling {
-    padding-top: 25px;
+section:nth-child(5) {
+    background: #133852;
+    color: #eee;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.typed-cursor {
+.column {
+    float: left;
+    overflow-wrap: normal;
+    overflow: auto;
+    text-align: center;
+    width: 33.33%;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    bottom: 0%;
+}
+
+#column1 {
+    background-color: #5EB8B6;
+    color: #eee;
+}
+
+#column2 {
+    background-color: #133852;
+    color: #eee;
+}
+
+#column3 {
+    background-color: #E2E4E3;
     color: black;
-    font-size: 3em;
 }
 
-@media (min-width: 300px) {
-    #typed {
-        color: black;
-        font-size: 1.5em;
-    }
-    .typed-cursor {
-        font-size: 1.5em;
-    }
-}
-
-@media (min-width: 500px) {
-    #typed {
-        color: black;
-        font-size: 2.5em;
-    }
-    .typed-cursor {
-        font-size: 2.5em;
-    }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding-bottom: 13vh;
 }
 
 #title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
     text-align: center;
     padding-bottom: 25px;
 }
@@ -80,8 +85,117 @@ body {
     border-radius: 50%;
 }
 
-/*.jumbotron {
-    
-    background-color: transparent;
-    min-height: 100%;
-}*/
+#box {
+    display: block;
+    width: 35%;
+    overflow-wrap: normal;
+    overflow: auto;
+    background-color: #eee;
+    color: black;
+    -moz-box-shadow: 10px 14px 13px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 14px 3px rgba(0,0,0,0.4),
+                 10px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+    box-shadow: 10px 14px 13px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+    margin: auto;
+}
+
+/* #typed-strings {
+    color: black;
+    font-size: 3em;
+} */
+
+#typedStyling {
+    padding-top: 25px;
+    padding-bottom: 45px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+.typed-cursor {
+    color: black;
+    font-size: inherit;
+}
+
+@media (max-width: 950px) {
+    #typed-strings {
+        font-size: 1.5em;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+    #box {
+        width: 70%;
+    }
+}
+
+@media (max-width: 950px) {
+    #typed-strings {
+        font-size: 1.5em;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+    #box {
+        width: 70%;
+    }
+}
+
+@media (max-width: 950px) {
+    #typed-strings {
+        font-size: 1.5em;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+    #box {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1165px) {
+    #typed-strings {
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+    #box {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1250px) {
+    #typed-strings {
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+    #box {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1350px) {
+    #typed-strings {
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+    #box {
+        width: 40%;
+    }
+}
+
+.contentStyling {
+    position: relative;
+    float: left;
+    overflow-wrap: normal;
+    overflow: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spacing {
+    content: "";
+    padding-top: 25px;
+}
