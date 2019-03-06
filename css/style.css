@@ -7,16 +7,17 @@ body {
     height: 100%;
     background: url('../images/computer-image.jpg') no-repeat center center fixed; 
     background-size: cover;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
     position: relative;
-    color: #eee;
+    color: black;
 }
 
 a:hover {
-    color: #eee;
+    color: black;
 }
 
 a:before {
@@ -26,7 +27,7 @@ a:before {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #eee;
+    background-color: black;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -42,54 +43,26 @@ a:hover:before {
 
 section {
     height: 100vh;
-    width: 100vw;
     overflow-wrap: normal;
     overflow: auto;
-    align-content: center;
 }
 
-section:nth-child(3) {
+section:nth-child(4) {
     background: #5EB8B6;
     color: #eee;
     font-family: 'Montserrat', sans-serif;
 }
 
-section:nth-child(4) {
+section:nth-child(6) {
     background: #E2E4E3;
     color: black;
     font-family: 'Montserrat', sans-serif;
 }
 
-section:nth-child(5) {
+section:nth-child(8) {
     background: #133852;
     color: #eee;
     font-family: 'Montserrat', sans-serif;
-}
-
-.column {
-    float: left;
-    overflow-wrap: normal;
-    overflow: auto;
-    text-align: center;
-    width: 33.33%;
-    font-family: 'Montserrat', sans-serif;
-    position: relative;
-    bottom: 0%;
-}
-
-#column1 {
-    background-color: #5EB8B6;
-    color: #eee;
-}
-
-#column2 {
-    background-color: #133852;
-    color: #eee;
-}
-
-#column3 {
-    background-color: #E2E4E3;
-    color: black;
 }
 
 .row:after {
@@ -97,6 +70,18 @@ section:nth-child(5) {
     display: table;
     clear: both;
     padding-bottom: 13vh;
+}
+
+.column {
+    float: left;
+    overflow-wrap: normal;
+    overflow: auto;
+    text-align: center;
+    width: 25%;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    padding-top: 1vh;
+    bottom: 0%;
 }
 
 #title {
@@ -226,10 +211,37 @@ section:nth-child(5) {
     padding-top: 25px;
 }
 
-#blackText {
-    color: black;
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+#leadershipColoring {
+    background-color: #133852;
+    color: white;
+}
+  
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+  
+.panel {
+    padding: 0 18px;
+    /* background-color: white; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
-#blackText::before {
-    background-color: black;
+.textColoringWhite {
+    color: white;
 }
