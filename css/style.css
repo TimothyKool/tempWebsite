@@ -225,7 +225,7 @@ section:nth-child(8) {
     transition: 0.4s;
   }
 
-#leadershipColoring {
+.leadershipColoring {
     background-color: #133852;
     color: white;
 }
@@ -240,8 +240,4 @@ section:nth-child(8) {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-}
-
-.textColoringWhite {
-    color: white;
 }
